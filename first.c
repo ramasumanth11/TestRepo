@@ -5,5 +5,7 @@ I am learning git
 int main()
 {
 printf("welcome to c programming");
-retirn 0;
+printf("my first.c");
+printf("added lines");
+return 0;
 }
