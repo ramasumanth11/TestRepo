@@ -15,6 +15,7 @@ class Lion : virtual public Animal{
     public:
         Lion(){
             cout<<"Lion Constructor"<<endl;
+	    cout<<"Lion 1 constructor"endl;
         }
 
 };
