@@ -1,3 +1,42 @@
-I am a Student
-Learning to use the github
-i m a learner
+#include<iostream>
+using namespace std;
+class Animal{
+    public:
+        Animal(){
+            cout<<"Animal constructor"<<endl;
+        }
+         void walk(){
+            cout << "Animal walks"<<endl;
+
+        }
+
+};
+class Lion : virtual public Animal{
+    public:
+        Lion(){
+            cout<<"Lion Constructor"<<endl;
+        }
+
+};
+class Tiger : virtual public Animal{
+     public:
+        Tiger(){
+            cout<<"Tiger Constructor"<<endl;
+        }
+
+
+};
+class Liger :public Lion,public Tiger{
+     public:
+        Liger(){
+            cout<<"Liger Constructor"<<endl;
+        }
+
+
+};
+int main()
+{
+    Liger anil;
+    anil.walk();
+    return 0;
+}
